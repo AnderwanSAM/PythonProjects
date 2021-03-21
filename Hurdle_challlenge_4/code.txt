@@ -1,0 +1,28 @@
+def turn_right() : 
+    for x in range(3):
+        turn_left()
+
+def go_down() : 
+    turn_right()
+    while not wall_in_front():
+        move()
+
+def jump() : 
+    turn_left()
+    move()
+    turn_right()
+    if wall_in_front() :
+        jump()
+    else :
+          move()
+          go_down()
+          turn_left()
+
+
+while not at_goal() : 
+    if wall_in_front() : 
+        jump()
+    else :
+        move()
+
+
