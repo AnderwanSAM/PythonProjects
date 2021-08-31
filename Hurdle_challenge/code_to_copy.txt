@@ -1,0 +1,25 @@
+def turn_right() : 
+    for x in range(3):
+        turn_left()
+
+def go_down() : 
+    turn_right()
+    move()
+
+def jump() : 
+    turn_left()
+    move()
+    turn_right()
+    move()
+    go_down()
+
+
+
+
+move()
+jump()
+for x in range(5) : 
+    turn_left()
+    move()
+    jump()
+

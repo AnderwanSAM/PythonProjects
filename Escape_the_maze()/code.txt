@@ -1,0 +1,17 @@
+def turn_right() : 
+    for x in range(3):
+        turn_left()
+
+
+while not at_goal() : 
+    if right_is_clear() :
+        if front_is_clear(): 
+            move ()
+        else : 
+            turn_right()
+    elif front_is_clear():
+        move()
+    else : 
+        turn_left()
+ 
+
